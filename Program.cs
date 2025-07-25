@@ -25,6 +25,8 @@ namespace FibonacciFile
                 try
                 {
                     writer.WriteLine(string.Join(",", numbers));
+                    Console.WriteLine("Fibonacci sequence written to file successfully.");
+                    Console.WriteLine("Path to file: " + System.IO.Path.GetFullPath("fibonacci"));
                 }
                 catch (Exception ex)
                 {
